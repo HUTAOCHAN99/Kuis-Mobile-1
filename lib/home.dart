@@ -61,8 +61,8 @@ class HomePage extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               image: const DecorationImage(
-                image: NetworkImage(
-                  'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800',
+                image: AssetImage(  
+                  'assets/piring.jfif',
                 ),
                 fit: BoxFit.cover,
               ),
@@ -125,7 +125,7 @@ class HomePage extends StatelessWidget {
                                 width: 70,
                                 height: 70,
                                 color: Colors.grey[300],
-                                child: const Icon(Icons.fastfood),
+                                child: const Image(image: AssetImage('assets/piring.jfif')),
                               );
                             },
                           ),
@@ -137,11 +137,6 @@ class HomePage extends StatelessWidget {
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              food.description,
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                            ),
                             const SizedBox(height: 4),
                             Text(
                               'Rp ${food.price.toString()}',

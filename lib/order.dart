@@ -77,13 +77,6 @@ class _OrderPageState extends State<OrderPage> {
                   const SizedBox(height: 8),
                   
                   // Deskripsi
-                  Text(
-                    widget.food.description,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey,
-                    ),
-                  ),
                   const SizedBox(height: 16),
                   
                   // Harga satuan

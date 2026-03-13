@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_tpm1/About.dart';
 import 'home.dart';
 import 'profile.dart';
 
@@ -19,6 +20,7 @@ class _RootState extends State<Root> {
     _pages = [
       const HomePage(), 
       const ProfilePage(), 
+      const AboutPage(),
     ];
   }
 
@@ -44,6 +46,10 @@ class _RootState extends State<Root> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: 'About',
           ),
         ],
       ),

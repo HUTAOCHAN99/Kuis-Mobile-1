@@ -31,18 +31,28 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                padding: const EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: Colors.deepPurple[100],
-                  shape: BoxShape.circle,
-                ),
-                child: const Icon(
-                  Icons.fastfood, 
-                  size: 80,
-                  color: Colors.deepPurple,
-                ),
-              ),
+           Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: Colors.white,
+                        width: 3,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.orange.shade200,
+                          blurRadius: 15,
+                          offset: const Offset(0, 5),
+                        ),
+                      ],
+                      image: const DecorationImage(
+                        image: AssetImage('assets/upnLogo.png'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
               
               const SizedBox(height: 40),
 
